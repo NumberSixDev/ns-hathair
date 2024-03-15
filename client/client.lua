@@ -1,5 +1,5 @@
 local previousHair = nil
-local QBCore = exports['core']:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 
 function loadAnimDict(dict)
 	while (not HasAnimDictLoaded(dict)) do
