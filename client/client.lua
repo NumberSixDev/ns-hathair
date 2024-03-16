@@ -47,4 +47,8 @@ if Config.UseItem == true then
     RegisterNetEvent('ns-hathair:useitem', function()
         UseHairband()
     end)
+else
+    RegisterCommand("hathair", function()
+        UseHairband()
+    end)
 end
