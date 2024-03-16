@@ -1,11 +1,11 @@
-local previousHair = nil
 local QBCore = exports['qb-core']:GetCoreObject()
+local previousHair = nil
 
 function loadAnimDict(dict)
-	while (not HasAnimDictLoaded(dict)) do
-		RequestAnimDict(dict)
-		Wait(5)
-	end
+    while (not HasAnimDictLoaded(dict)) do
+        RequestAnimDict(dict)
+        Wait(5)
+    end
 end
 
 function Anim()
@@ -13,7 +13,7 @@ function Anim()
     TaskPlayAnim(PlayerPedId(), "clothingshirt", "try_shirt_positive_d", 8.0, 1.0, -1, 49, 0, 0, 0, 0)
 end
 
-RegisterCommand("hathair", function()
+function UseHairband()
     local ped = PlayerPedId()
 
     if previousHair == nil then
@@ -41,4 +41,10 @@ RegisterCommand("hathair", function()
             previousHair = nil
         end)
     end
-end, false)
+end
+
+if Config.UseItem == true then
+    RegisterNetEvent('ns-hathair:useitem', function()
+        UseHairband()
+    end)
+end
