@@ -1,6 +1,10 @@
 # ns-hathair
 ns-hathair is a very easy to use and simple script to remove your hair to enhance roleplay experience if your hair is (for example) sticking through your player's hat.
 
+# Support
+
+If you require any support at all please open a ticket in my discord, NS Development: https://discord.gg/invite/GbrF64Y5TJ/
+
 # Installation
 
 - Click <> Code Then Click 'Download ZIP'
@@ -8,7 +12,3 @@ ns-hathair is a very easy to use and simple script to remove your hair to enhanc
 - Rename To 'ns-hathair'
 - Ensure It In Your Server.Cfg
 - Enjoy! :)
-
-# Notes
-
-- If you come across any bugs or have any suggestions open a ticket and let me know in the NS Development discord found on my ReadMe.md on my GitHub Profile.
